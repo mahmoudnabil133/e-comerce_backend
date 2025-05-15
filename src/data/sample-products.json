@@ -1,0 +1,198 @@
+{
+  "products": [
+    {
+      "name": "MacBook Pro 14-inch (2023)",
+      "description": "Apple MacBook Pro with M2 Pro chip, 14-inch Liquid Retina XDR display, 16GB RAM, 512GB SSD",
+      "price": 1999.99,
+      "category": "Laptop",
+      "brand": "Apple",
+      "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800",
+      "stock": 50,
+      "specifications": {
+        "processor": "Apple M2 Pro",
+        "memory": "16GB",
+        "storage": "512GB SSD",
+        "display": "14-inch Liquid Retina XDR",
+        "battery": "Up to 18 hours"
+      },
+      "tags": ["laptop", "macbook", "apple", "professional"]
+    },
+    {
+      "name": "Dell XPS 13 Plus",
+      "description": "Dell XPS 13 Plus with 13.4-inch 4K display, Intel Core i7, 16GB RAM, 512GB SSD",
+      "price": 1699.99,
+      "category": "Laptop",
+      "brand": "Dell",
+      "imageUrl": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800",
+      "stock": 35,
+      "specifications": {
+        "processor": "Intel Core i7-1260P",
+        "memory": "16GB",
+        "storage": "512GB SSD",
+        "display": "13.4-inch 4K",
+        "battery": "Up to 13 hours"
+      },
+      "tags": ["laptop", "dell", "xps", "ultrabook"]
+    },
+    {
+      "name": "Sony WH-1000XM4",
+      "description": "Premium Wireless Noise Cancelling Headphones",
+      "price": 349.99,
+      "category": "Audio",
+      "brand": "Sony",
+      "imageUrl": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800",
+      "stock": 100,
+      "specifications": {
+        "type": "Over-ear",
+        "battery": "30 hours",
+        "features": "ANC, LDAC, Multipoint",
+        "driver": "40mm"
+      },
+      "tags": ["headphones", "wireless", "noise-cancelling"]
+    },
+    {
+      "name": "Logitech MX Keys",
+      "description": "Advanced Wireless Illuminated Keyboard",
+      "price": 119.99,
+      "category": "Accessories",
+      "brand": "Logitech",
+      "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+      "stock": 75,
+      "specifications": {
+        "type": "Full-size",
+        "connectivity": "Bluetooth, USB",
+        "battery": "10 days with backlight",
+        "features": "Smart illumination, Flow technology"
+      },
+      "tags": ["keyboard", "wireless", "professional"]
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra",
+      "description": "Premium Android smartphone with S Pen",
+      "price": 1199.99,
+      "category": "Smartphone",
+      "brand": "Samsung",
+      "imageUrl": "https://images.unsplash.com/photo-1678911820864-e5c67e784c10?w=800",
+      "stock": 60,
+      "specifications": {
+        "screen": "6.8-inch Dynamic AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "camera": "200MP main sensor",
+        "battery": "5000mAh"
+      },
+      "tags": ["smartphone", "android", "samsung", "premium"]
+    },
+    {
+      "name": "iPad Pro 12.9-inch",
+      "description": "Apple iPad Pro with M2 chip and Liquid Retina XDR display",
+      "price": 1099.99,
+      "category": "Tablet",
+      "brand": "Apple",
+      "imageUrl": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800",
+      "stock": 45,
+      "specifications": {
+        "processor": "Apple M2",
+        "display": "12.9-inch Liquid Retina XDR",
+        "storage": "256GB",
+        "features": "Face ID, Apple Pencil 2 support"
+      },
+      "tags": ["tablet", "ipad", "apple", "professional"]
+    },
+    {
+      "name": "Razer Blade 15",
+      "description": "Advanced Gaming Laptop with RTX 4080",
+      "price": 2499.99,
+      "category": "Gaming Laptop",
+      "brand": "Razer",
+      "imageUrl": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=800",
+      "stock": 30,
+      "specifications": {
+        "processor": "Intel Core i9-13900H",
+        "gpu": "NVIDIA RTX 4080",
+        "memory": "32GB DDR5",
+        "display": "15.6-inch QHD 240Hz"
+      },
+      "tags": ["gaming", "laptop", "razer", "rtx"]
+    },
+    {
+      "name": "Bose QuietComfort Earbuds II",
+      "description": "Premium noise cancelling true wireless earbuds",
+      "price": 299.99,
+      "category": "Audio",
+      "brand": "Bose",
+      "imageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800",
+      "stock": 85,
+      "specifications": {
+        "type": "True Wireless",
+        "battery": "6 hours + 24 hours case",
+        "features": "CustomTune technology, ANC",
+        "connectivity": "Bluetooth 5.3"
+      },
+      "tags": ["earbuds", "wireless", "noise-cancelling"]
+    },
+    {
+      "name": "LG C2 65-inch OLED TV",
+      "description": "4K OLED Smart TV with AI processing",
+      "price": 1999.99,
+      "category": "TV",
+      "brand": "LG",
+      "imageUrl": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800",
+      "stock": 25,
+      "specifications": {
+        "display": "65-inch 4K OLED",
+        "processor": "α9 Gen5 AI Processor",
+        "features": "G-SYNC, FreeSync Premium",
+        "hdmi": "4x HDMI 2.1"
+      },
+      "tags": ["tv", "oled", "gaming", "smart-tv"]
+    },
+    {
+      "name": "ASUS ROG Swift PG32UQX",
+      "description": "32-inch 4K HDR Gaming Monitor",
+      "price": 2999.99,
+      "category": "Monitor",
+      "brand": "ASUS",
+      "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800",
+      "stock": 20,
+      "specifications": {
+        "panel": "32-inch 4K IPS",
+        "refresh": "144Hz",
+        "hdr": "Mini LED HDR 1400",
+        "response": "1ms GTG"
+      },
+      "tags": ["monitor", "gaming", "4k", "hdr"]
+    },
+    {
+      "name": "Logitech G Pro X Superlight",
+      "description": "Ultra-lightweight Wireless Gaming Mouse",
+      "price": 159.99,
+      "category": "Gaming Accessories",
+      "brand": "Logitech",
+      "imageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800",
+      "stock": 90,
+      "specifications": {
+        "sensor": "HERO 25K",
+        "weight": "63g",
+        "battery": "70 hours",
+        "connectivity": "LIGHTSPEED Wireless"
+      },
+      "tags": ["mouse", "gaming", "wireless", "esports"]
+    },
+    {
+      "name": "Canon EOS R5",
+      "description": "Professional Mirrorless Camera",
+      "price": 3899.99,
+      "category": "Camera",
+      "brand": "Canon",
+      "imageUrl": "https://images.unsplash.com/photo-1621319332247-ce1d8e177728?w=800",
+      "stock": 15,
+      "specifications": {
+        "sensor": "45MP Full-Frame CMOS",
+        "video": "8K RAW, 4K 120p",
+        "stabilization": "5-axis IBIS",
+        "autofocus": "Dual Pixel CMOS AF II"
+      },
+      "tags": ["camera", "professional", "mirrorless", "canon"]
+    }
+  ]
+} 

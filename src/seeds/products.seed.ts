@@ -1,0 +1,429 @@
+import { Product } from '../models/product.model';
+
+export const productSeeds: Partial<Product>[] = [
+  {
+    name: "MacBook Pro 14-inch M3",
+    description: "The latest MacBook Pro featuring the M3 chip, 14-inch Liquid Retina XDR display, and up to 18 hours of battery life.",
+    price: 1599.99,
+    category: "Laptops",
+    brand: "Apple",
+    imageUrl: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800",
+    discount: 0,
+    stock: 25,
+    additionalImages: [
+      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800",
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800"
+    ],
+    specifications: {
+      processor: "Apple M3 chip",
+      memory: "16GB unified memory",
+      storage: "512GB SSD",
+      display: "14-inch Liquid Retina XDR",
+      battery: "Up to 18 hours"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 156,
+    tags: ["laptop", "apple", "macbook", "premium"]
+  },
+  {
+    name: "Sony WH-1000XM5",
+    description: "Industry-leading noise canceling wireless headphones with exceptional sound quality and up to 30 hours of battery life.",
+    price: 399.99,
+    category: "Audio",
+    brand: "Sony",
+    imageUrl: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800",
+    discount: 10,
+    stock: 45,
+    specifications: {
+      type: "Over-ear",
+      connectivity: "Bluetooth 5.2",
+      battery: "30 hours",
+      features: "Active Noise Cancellation"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 892,
+    tags: ["headphones", "audio", "wireless", "noise-canceling"]
+  },
+  {
+    name: "Samsung Galaxy S24 Ultra",
+    description: "The ultimate Android flagship with S Pen support, 200MP camera, and AI-powered features.",
+    price: 1299.99,
+    category: "Smartphones",
+    brand: "Samsung",
+    imageUrl: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800",
+    discount: 0,
+    stock: 30,
+    specifications: {
+      processor: "Snapdragon 8 Gen 3",
+      memory: "12GB RAM",
+      storage: "512GB",
+      display: "6.8-inch Dynamic AMOLED 2X",
+      camera: "200MP main sensor"
+    },
+    isAvailable: true,
+    rating: 4.9,
+    reviewsCount: 245,
+    tags: ["smartphone", "android", "samsung", "premium"]
+  },
+  {
+    name: "LG C3 65-inch OLED TV",
+    description: "Premium 4K OLED TV with perfect blacks, infinite contrast, and gaming features.",
+    price: 2499.99,
+    category: "TVs",
+    brand: "LG",
+    imageUrl: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800",
+    discount: 15,
+    stock: 15,
+    specifications: {
+      resolution: "4K UHD",
+      panel: "OLED evo",
+      processor: "α9 AI Processor Gen6",
+      hdr: "Dolby Vision, HDR10"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 167,
+    tags: ["tv", "oled", "4k", "premium"]
+  },
+  {
+    name: "iPad Air (5th generation)",
+    description: "Powerful tablet with M1 chip, 10.9-inch Liquid Retina display, and Apple Pencil support.",
+    price: 599.99,
+    category: "Tablets",
+    brand: "Apple",
+    imageUrl: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800",
+    discount: 0,
+    stock: 50,
+    specifications: {
+      processor: "Apple M1 chip",
+      display: "10.9-inch Liquid Retina",
+      storage: "256GB",
+      connectivity: "Wi-Fi 6"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 438,
+    tags: ["tablet", "ipad", "apple"]
+  },
+  {
+    name: "Dell XPS 15",
+    description: "Premium Windows laptop with InfinityEdge display and powerful performance.",
+    price: 1899.99,
+    category: "Laptops",
+    brand: "Dell",
+    imageUrl: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800",
+    discount: 5,
+    stock: 20,
+    specifications: {
+      processor: "Intel Core i9-13900H",
+      memory: "32GB DDR5",
+      storage: "1TB SSD",
+      display: "15.6-inch 4K OLED"
+    },
+    isAvailable: true,
+    rating: 4.6,
+    reviewsCount: 289,
+    tags: ["laptop", "windows", "dell", "premium"]
+  },
+  {
+    name: "Logitech MX Master 3S",
+    description: "Advanced wireless mouse with electromagnetic scrolling and ergonomic design.",
+    price: 99.99,
+    category: "Accessories",
+    brand: "Logitech",
+    imageUrl: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800",
+    discount: 0,
+    stock: 100,
+    specifications: {
+      sensor: "8000 DPI",
+      buttons: "7 programmable",
+      battery: "Up to 70 days",
+      connectivity: "Bluetooth/USB"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 1245,
+    tags: ["mouse", "wireless", "accessories"]
+  },
+  {
+    name: "ASUS ROG Swift PG32UQX",
+    description: "32-inch 4K HDR gaming monitor with Mini LED technology.",
+    price: 2999.99,
+    category: "Monitors",
+    brand: "ASUS",
+    imageUrl: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800",
+    discount: 10,
+    stock: 10,
+    specifications: {
+      resolution: "4K UHD",
+      refreshRate: "144Hz",
+      panel: "Mini LED",
+      hdr: "HDR 1400"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 89,
+    tags: ["monitor", "gaming", "4k"]
+  },
+  {
+    name: "Bose QuietComfort Earbuds II",
+    description: "True wireless earbuds with personalized noise cancellation.",
+    price: 299.99,
+    category: "Audio",
+    brand: "Bose",
+    imageUrl: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800",
+    discount: 0,
+    stock: 75,
+    specifications: {
+      type: "True Wireless",
+      battery: "6 hours + 24 with case",
+      features: "CustomTune technology"
+    },
+    isAvailable: true,
+    rating: 4.6,
+    reviewsCount: 567,
+    tags: ["earbuds", "wireless", "audio"]
+  },
+  {
+    name: "NVIDIA GeForce RTX 4090",
+    description: "Ultimate gaming graphics card with ray tracing and DLSS 3.0.",
+    price: 1599.99,
+    category: "Components",
+    brand: "NVIDIA",
+    imageUrl: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=800",
+    discount: 0,
+    stock: 5,
+    specifications: {
+      memory: "24GB GDDR6X",
+      cores: "16384 CUDA cores",
+      boost: "2.52 GHz",
+      power: "450W"
+    },
+    isAvailable: true,
+    rating: 4.9,
+    reviewsCount: 234,
+    tags: ["gpu", "gaming", "components"]
+  },
+  {
+    name: "Canon EOS R5",
+    description: "Professional mirrorless camera with 8K video capabilities.",
+    price: 3899.99,
+    category: "Cameras",
+    brand: "Canon",
+    imageUrl: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800",
+    discount: 5,
+    stock: 15,
+    specifications: {
+      sensor: "45MP Full-Frame CMOS",
+      video: "8K RAW",
+      stabilization: "5-axis IBIS",
+      af: "Dual Pixel CMOS AF II"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 312,
+    tags: ["camera", "professional", "mirrorless"]
+  },
+  {
+    name: "Razer Blade 18",
+    description: "Ultimate gaming laptop with 18-inch display and RTX 4090.",
+    price: 4499.99,
+    category: "Laptops",
+    brand: "Razer",
+    imageUrl: "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=800",
+    discount: 0,
+    stock: 8,
+    specifications: {
+      processor: "Intel Core i9-13950HX",
+      gpu: "NVIDIA RTX 4090",
+      memory: "64GB DDR5",
+      display: "18-inch QHD+ 240Hz"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 86,
+    tags: ["laptop", "gaming", "premium"]
+  },
+  {
+    name: "Apple Watch Series 9",
+    description: "Advanced smartwatch with health monitoring and cellular connectivity.",
+    price: 499.99,
+    category: "Wearables",
+    brand: "Apple",
+    imageUrl: "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800",
+    discount: 0,
+    stock: 60,
+    specifications: {
+      display: "Always-On Retina",
+      chip: "S9 SiP",
+      connectivity: "Cellular + GPS",
+      sensors: "Temperature, ECG, Blood Oxygen"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 892,
+    tags: ["smartwatch", "apple", "wearable"]
+  },
+  {
+    name: "DJI Air 3",
+    description: "Compact drone with 4K video and intelligent flight modes.",
+    price: 999.99,
+    category: "Drones",
+    brand: "DJI",
+    imageUrl: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800",
+    discount: 0,
+    stock: 25,
+    specifications: {
+      camera: "4K/60fps",
+      flightTime: "34 minutes",
+      range: "12km",
+      features: "ActiveTrack 5.0"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 156,
+    tags: ["drone", "camera", "aerial"]
+  },
+  {
+    name: "Samsung 990 PRO 2TB NVMe SSD",
+    description: "Ultra-fast PCIe 4.0 NVMe SSD for professional use.",
+    price: 219.99,
+    category: "Storage",
+    brand: "Samsung",
+    imageUrl: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800",
+    discount: 15,
+    stock: 40,
+    specifications: {
+      capacity: "2TB",
+      interface: "PCIe 4.0",
+      read: "7,450 MB/s",
+      write: "6,900 MB/s"
+    },
+    isAvailable: true,
+    rating: 4.9,
+    reviewsCount: 445,
+    tags: ["storage", "ssd", "components"]
+  },
+  {
+    name: "Elgato Stream Deck MK.2",
+    description: "Professional stream controller with customizable LCD keys.",
+    price: 149.99,
+    category: "Accessories",
+    brand: "Elgato",
+    imageUrl: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=800",
+    discount: 0,
+    stock: 30,
+    specifications: {
+      keys: "15 LCD keys",
+      compatibility: "Windows/macOS",
+      connection: "USB-C",
+      customization: "Unlimited profiles"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 678,
+    tags: ["streaming", "accessories", "content creation"]
+  },
+  {
+    name: "LG UltraGear 27GR95QE",
+    description: "27-inch OLED gaming monitor with 240Hz refresh rate.",
+    price: 999.99,
+    category: "Monitors",
+    brand: "LG",
+    imageUrl: "https://images.unsplash.com/photo-1527443060795-0d06bcce182e?w=800",
+    discount: 10,
+    stock: 20,
+    specifications: {
+      panel: "OLED",
+      resolution: "2560x1440",
+      refreshRate: "240Hz",
+      response: "0.03ms GtG"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 234,
+    tags: ["monitor", "gaming", "oled"]
+  },
+  {
+    name: "Keychron Q1 Pro",
+    description: "Premium wireless mechanical keyboard with hot-swappable switches.",
+    price: 199.99,
+    category: "Accessories",
+    brand: "Keychron",
+    imageUrl: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+    discount: 0,
+    stock: 50,
+    specifications: {
+      switches: "Gateron G Pro",
+      layout: "75%",
+      connectivity: "Bluetooth/USB-C",
+      case: "CNC Aluminum"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 312,
+    tags: ["keyboard", "mechanical", "wireless"]
+  },
+  {
+    name: "Sonos Arc",
+    description: "Premium Dolby Atmos soundbar with room-filling sound.",
+    price: 899.99,
+    category: "Audio",
+    brand: "Sonos",
+    imageUrl: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800",
+    discount: 5,
+    stock: 25,
+    specifications: {
+      channels: "5.0.2",
+      features: "Dolby Atmos, TrueHD",
+      connectivity: "Wi-Fi, HDMI eARC",
+      voice: "Alexa & Google Assistant"
+    },
+    isAvailable: true,
+    rating: 4.7,
+    reviewsCount: 567,
+    tags: ["audio", "soundbar", "home theater"]
+  },
+  {
+    name: "GoPro HERO11 Black",
+    description: "Advanced action camera with 5.3K video and HyperSmooth 5.0.",
+    price: 499.99,
+    category: "Cameras",
+    brand: "GoPro",
+    imageUrl: "https://images.unsplash.com/photo-1526186646923-5a0c5c636d27?w=800",
+    discount: 0,
+    stock: 35,
+    specifications: {
+      video: "5.3K60",
+      photo: "27MP",
+      stabilization: "HyperSmooth 5.0",
+      waterproof: "33ft (10m)"
+    },
+    isAvailable: true,
+    rating: 4.8,
+    reviewsCount: 789,
+    tags: ["camera", "action", "waterproof"]
+  },
+  {
+    name: "Rode NT1 5th Generation",
+    description: "Professional studio condenser microphone with USB/XLR dual connection.",
+    price: 259.99,
+    category: "Audio",
+    brand: "Rode",
+    imageUrl: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800",
+    discount: 0,
+    stock: 40,
+    specifications: {
+      type: "Condenser",
+      pattern: "Cardioid",
+      connection: "USB-C/XLR",
+      resolution: "32-bit float"
+    },
+    isAvailable: true,
+    rating: 4.9,
+    reviewsCount: 123,
+    tags: ["microphone", "audio", "studio"]
+  }
+]; 

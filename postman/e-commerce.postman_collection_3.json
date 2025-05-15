@@ -1,0 +1,1791 @@
+{
+	"info": {
+		"_postman_id": "4b3239a9-6a8a-40cb-9fd5-c549dbfd2aee",
+		"name": "e-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34320045",
+		"_collection_link": "https://orange-moon-277454.postman.co/workspace/Grad-project~9ee9c0ae-92cd-4322-a91b-b96092901326/collection/34320045-4b3239a9-6a8a-40cb-9fd5-c549dbfd2aee?action=share&source=collection_link&creator=34320045"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "sign up",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"mahmoud\",\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all products Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"mahmoud\",\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/auth/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "416"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a0-VJYQ5bBSY2ROAwdkLZGQ9XWT3ro\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:04:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDcyOTk4NzgsImV4cCI6MTc0NzkwNDY3OH0.STSHgMlq2KequvREO1BxUAoACIS5o_lD0H1Fpjq_18M\",\n        \"user\": {\n            \"name\": \"mahmoud\",\n            \"email\": \"hodanabil@gmail.com\",\n            \"favorites\": [],\n            \"_id\": \"6825ae2631ea61345b56f1c0\",\n            \"cart\": [],\n            \"createdAt\": \"2025-05-15T09:04:38.461Z\",\n            \"updatedAt\": \"2025-05-15T09:04:38.461Z\",\n            \"__v\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sign up Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "416"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a0-kpsRRKdauxDGhN+rW/kEZ4QBKgA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:07:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDAwMzQsImV4cCI6MTc0NzkwNDgzNH0.R7Smic2vWmYCNmu_SuzUecPFRIURTAmGVeqiKuP5V-8\",\n        \"user\": {\n            \"_id\": \"6825ae2631ea61345b56f1c0\",\n            \"name\": \"mahmoud\",\n            \"email\": \"hodanabil@gmail.com\",\n            \"favorites\": [],\n            \"cart\": [],\n            \"createdAt\": \"2025-05-15T09:04:38.461Z\",\n            \"updatedAt\": \"2025-05-15T09:04:38.461Z\",\n            \"__v\": 0\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get all products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products?page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products?page=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2855"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b27-WlgHDm2TqO0bIIMQY0mf2mqSRR4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:48:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"products\": [\n            {\n                \"discount\": 0,\n                \"additionalImages\": [],\n                \"isAvailable\": true,\n                \"rating\": 0,\n                \"reviewsCount\": 0,\n                \"reviews\": [],\n                \"_id\": \"68258d0a5a381a8ee8913272\",\n                \"name\": \"Bose QuietComfort Earbuds II\",\n                \"description\": \"Premium noise cancelling true wireless earbuds\",\n                \"price\": 299.99,\n                \"category\": \"Audio\",\n                \"brand\": \"Bose\",\n                \"imageUrl\": \"https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800\",\n                \"stock\": 85,\n                \"specifications\": {\n                    \"type\": \"True Wireless\",\n                    \"battery\": \"6 hours + 24 hours case\",\n                    \"features\": \"CustomTune technology, ANC\",\n                    \"connectivity\": \"Bluetooth 5.3\"\n                },\n                \"tags\": [\n                    \"earbuds\",\n                    \"wireless\",\n                    \"noise-cancelling\"\n                ]\n            },\n            {\n                \"discount\": 0,\n                \"additionalImages\": [],\n                \"isAvailable\": true,\n                \"rating\": 0,\n                \"reviewsCount\": 0,\n                \"reviews\": [],\n                \"_id\": \"68258d0a5a381a8ee891326e\",\n                \"name\": \"Logitech MX Keys\",\n                \"description\": \"Advanced Wireless Illuminated Keyboard\",\n                \"price\": 119.99,\n                \"category\": \"Accessories\",\n                \"brand\": \"Logitech\",\n                \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n                \"stock\": 75,\n                \"specifications\": {\n                    \"type\": \"Full-size\",\n                    \"connectivity\": \"Bluetooth, USB\",\n                    \"battery\": \"10 days with backlight\",\n                    \"features\": \"Smart illumination, Flow technology\"\n                },\n                \"tags\": [\n                    \"keyboard\",\n                    \"wireless\",\n                    \"professional\"\n                ]\n            },\n            {\n                \"discount\": 0,\n                \"additionalImages\": [],\n                \"isAvailable\": true,\n                \"rating\": 0,\n                \"reviewsCount\": 0,\n                \"reviews\": [],\n                \"_id\": \"68258d0a5a381a8ee891326c\",\n                \"name\": \"Dell XPS 13 Plus\",\n                \"description\": \"Dell XPS 13 Plus with 13.4-inch 4K display, Intel Core i7, 16GB RAM, 512GB SSD\",\n                \"price\": 1699.99,\n                \"category\": \"Laptop\",\n                \"brand\": \"Dell\",\n                \"imageUrl\": \"https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800\",\n                \"stock\": 35,\n                \"specifications\": {\n                    \"processor\": \"Intel Core i7-1260P\",\n                    \"memory\": \"16GB\",\n                    \"storage\": \"512GB SSD\",\n                    \"display\": \"13.4-inch 4K\",\n                    \"battery\": \"Up to 13 hours\"\n                },\n                \"tags\": [\n                    \"laptop\",\n                    \"dell\",\n                    \"xps\",\n                    \"ultrabook\"\n                ]\n            },\n            {\n                \"discount\": 0,\n                \"additionalImages\": [],\n                \"isAvailable\": true,\n                \"rating\": 0,\n                \"reviewsCount\": 0,\n                \"reviews\": [],\n                \"_id\": \"68258d0a5a381a8ee8913270\",\n                \"name\": \"iPad Pro 12.9-inch\",\n                \"description\": \"Apple iPad Pro with M2 chip and Liquid Retina XDR display\",\n                \"price\": 1099.99,\n                \"category\": \"Tablet\",\n                \"brand\": \"Apple\",\n                \"imageUrl\": \"https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=800\",\n                \"stock\": 45,\n                \"specifications\": {\n                    \"processor\": \"Apple M2\",\n                    \"display\": \"12.9-inch Liquid Retina XDR\",\n                    \"storage\": \"256GB\",\n                    \"features\": \"Face ID, Apple Pencil 2 support\"\n                },\n                \"tags\": [\n                    \"tablet\",\n                    \"ipad\",\n                    \"apple\",\n                    \"professional\"\n                ]\n            },\n            {\n                \"discount\": 0,\n                \"additionalImages\": [],\n                \"isAvailable\": true,\n                \"rating\": 0,\n                \"reviewsCount\": 0,\n                \"reviews\": [],\n                \"_id\": \"68258d0a5a381a8ee891326d\",\n                \"name\": \"Sony WH-1000XM4\",\n                \"description\": \"Premium Wireless Noise Cancelling Headphones\",\n                \"price\": 349.99,\n                \"category\": \"Audio\",\n                \"brand\": \"Sony\",\n                \"imageUrl\": \"https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=800\",\n                \"stock\": 100,\n                \"specifications\": {\n                    \"type\": \"Over-ear\",\n                    \"battery\": \"30 hours\",\n                    \"features\": \"ANC, LDAC, Multipoint\",\n                    \"driver\": \"40mm\"\n                },\n                \"tags\": [\n                    \"headphones\",\n                    \"wireless\",\n                    \"noise-cancelling\"\n                ]\n            }\n        ],\n        \"total\": 34,\n        \"pages\": 7\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "create product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n      \"name\": \"HUAWEI MatePad Pro 12.2\",\n      \"description\": \"HUAWEI MatePad Pro 12.2-inch PaperMatte Edition WIFI 12+512 GB Premium Gold Inbox Keyboard\",\n      \"price\": 49999,\n      \"category\": \"MatePad\",\n      \"brand\": \"HUAWEI\",\n      \"imageUrl\": \"https://img01.huaweifile.com/sg/ms/eg/pms/uomcdn/EG_B2B2C/pms/202501/gbom/6942103131639/428_428_9412C6B3A17EE8E571FD01CDD703B6E8mp.png\",\n      \"stock\": 12,\n      \"specifications\": {\n        \"processor\": \"Apple M2 Pro\",\n        \"memory\": \"12GB\",\n        \"storage\": \"512GB SSD\",\n        \"display\": \"14-inch Liquid Retina XDR\",\n        \"battery\": \"Up to 18 hours\"\n      },\n      \"tags\": [\"MatePad\", \"HUAWEI\", \"professional\"]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\n    {\n      \"name\": \"HUAWEI MatePad Pro 12.2\",\n      \"description\": \"HUAWEI MatePad Pro 12.2-inch PaperMatte Edition WIFI 12+512 GB Premium Gold Inbox Keyboard\",\n      \"price\": 49999,\n      \"category\": \"MatePad\",\n      \"brand\": \"HUAWEI\",\n      \"imageUrl\": \"https://img01.huaweifile.com/sg/ms/eg/pms/uomcdn/EG_B2B2C/pms/202501/gbom/6942103131639/428_428_9412C6B3A17EE8E571FD01CDD703B6E8mp.png\",\n      \"stock\": 12,\n      \"specifications\": {\n        \"processor\": \"Apple M2 Pro\",\n        \"memory\": \"12GB\",\n        \"storage\": \"512GB SSD\",\n        \"display\": \"14-inch Liquid Retina XDR\",\n        \"battery\": \"Up to 18 hours\"\n      },\n      \"tags\": [\"MatePad\", \"HUAWEI\", \"professional\"]\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "786"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"312-3jeKMH1ppIGGcsZrfCmdJcQAiPQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:56:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"name\": \"HUAWEI MatePad Pro 12.2\",\n        \"description\": \"HUAWEI MatePad Pro 12.2-inch PaperMatte Edition WIFI 12+512 GB Premium Gold Inbox Keyboard\",\n        \"price\": 49999,\n        \"category\": \"MatePad\",\n        \"brand\": \"HUAWEI\",\n        \"imageUrl\": \"https://img01.huaweifile.com/sg/ms/eg/pms/uomcdn/EG_B2B2C/pms/202501/gbom/6942103131639/428_428_9412C6B3A17EE8E571FD01CDD703B6E8mp.png\",\n        \"discount\": 0,\n        \"stock\": 12,\n        \"additionalImages\": [],\n        \"specifications\": {\n            \"processor\": \"Apple M2 Pro\",\n            \"memory\": \"12GB\",\n            \"storage\": \"512GB SSD\",\n            \"display\": \"14-inch Liquid Retina XDR\",\n            \"battery\": \"Up to 18 hours\"\n        },\n        \"isAvailable\": true,\n        \"rating\": 0,\n        \"reviewsCount\": 0,\n        \"reviews\": [],\n        \"tags\": [\n            \"MatePad\",\n            \"HUAWEI\",\n            \"professional\"\n        ],\n        \"_id\": \"68259e31341a409cc55cff7c\",\n        \"createdAt\": \"2025-05-15T07:56:33.816Z\",\n        \"updatedAt\": \"2025-05-15T07:56:33.816Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get one product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"68258d0a5a381a8ee891326e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get one product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"68258d0a5a381a8ee891326e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "588"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24c-FoItOukgoidl6yHfKeLQKqkpFEo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:34:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"discount\": 0,\n        \"additionalImages\": [],\n        \"isAvailable\": true,\n        \"rating\": 0,\n        \"reviewsCount\": 0,\n        \"reviews\": [],\n        \"_id\": \"68258d0a5a381a8ee891326e\",\n        \"name\": \"Logitech MX Keys\",\n        \"description\": \"Advanced Wireless Illuminated Keyboard\",\n        \"price\": 119.99,\n        \"category\": \"Accessories\",\n        \"brand\": \"Logitech\",\n        \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n        \"stock\": 75,\n        \"specifications\": {\n            \"type\": \"Full-size\",\n            \"connectivity\": \"Bluetooth, USB\",\n            \"battery\": \"10 days with backlight\",\n            \"features\": \"Smart illumination, Flow technology\"\n        },\n        \"tags\": [\n            \"keyboard\",\n            \"wireless\",\n            \"professional\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "search",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/search?q=Logitech",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Logitech"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get one product Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/search?q=Logitech",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "Logitech"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1703"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6a7-6+fLfYWbtLU68dtibKly5mO/HS4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:37:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"discount\": 0,\n            \"additionalImages\": [],\n            \"isAvailable\": true,\n            \"rating\": 0,\n            \"reviewsCount\": 0,\n            \"reviews\": [],\n            \"_id\": \"68258d0a5a381a8ee891326e\",\n            \"name\": \"Logitech MX Keys\",\n            \"description\": \"Advanced Wireless Illuminated Keyboard\",\n            \"price\": 119.99,\n            \"category\": \"Accessories\",\n            \"brand\": \"Logitech\",\n            \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n            \"stock\": 75,\n            \"specifications\": {\n                \"type\": \"Full-size\",\n                \"connectivity\": \"Bluetooth, USB\",\n                \"battery\": \"10 days with backlight\",\n                \"features\": \"Smart illumination, Flow technology\"\n            },\n            \"tags\": [\n                \"keyboard\",\n                \"wireless\",\n                \"professional\"\n            ]\n        },\n        {\n            \"discount\": 0,\n            \"additionalImages\": [],\n            \"isAvailable\": true,\n            \"rating\": 0,\n            \"reviewsCount\": 0,\n            \"reviews\": [],\n            \"_id\": \"68258d0a5a381a8ee8913275\",\n            \"name\": \"Logitech G Pro X Superlight\",\n            \"description\": \"Ultra-lightweight Wireless Gaming Mouse\",\n            \"price\": 159.99,\n            \"category\": \"Gaming Accessories\",\n            \"brand\": \"Logitech\",\n            \"imageUrl\": \"https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=800\",\n            \"stock\": 90,\n            \"specifications\": {\n                \"sensor\": \"HERO 25K\",\n                \"weight\": \"63g\",\n                \"battery\": \"70 hours\",\n                \"connectivity\": \"LIGHTSPEED Wireless\"\n            },\n            \"tags\": [\n                \"mouse\",\n                \"gaming\",\n                \"wireless\",\n                \"esports\"\n            ]\n        },\n        {\n            \"additionalImages\": [],\n            \"reviews\": [],\n            \"_id\": \"682598775a381a8ee891327e\",\n            \"name\": \"Logitech MX Master 3S\",\n            \"description\": \"Advanced wireless mouse with electromagnetic scrolling and ergonomic design.\",\n            \"price\": 99.99,\n            \"category\": \"Accessories\",\n            \"brand\": \"Logitech\",\n            \"imageUrl\": \"https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800\",\n            \"discount\": 0,\n            \"stock\": 100,\n            \"specifications\": {\n                \"sensor\": \"8000 DPI\",\n                \"buttons\": \"7 programmable\",\n                \"battery\": \"Up to 70 days\",\n                \"connectivity\": \"Bluetooth/USB\"\n            },\n            \"isAvailable\": true,\n            \"rating\": 4.8,\n            \"reviewsCount\": 1245,\n            \"tags\": [\n                \"mouse\",\n                \"wireless\",\n                \"accessories\"\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reviews\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"68258d0a5a381a8ee891326e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search Copy",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"appas\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/68259a97341a409cc55cff69",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"68259a97341a409cc55cff69"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "768"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"300-1VKecOx5HPhkUUNcIQ0IDqtCA/c\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:41:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"68259a97341a409cc55cff69\",\n        \"name\": \"appas\",\n        \"description\": \"HUAWEI MatePad Pro 12.2-inch PaperMatte Edition WIFI 12+512 GB Premium Gold Inbox Keyboard\",\n        \"price\": 49999,\n        \"category\": \"MatePad\",\n        \"brand\": \"HUAWEI\",\n        \"imageUrl\": \"https://img01.huaweifile.com/sg/ms/eg/pms/uomcdn/EG_B2B2C/pms/202501/gbom/6942103131639/428_428_9412C6B3A17EE8E571FD01CDD703B6E8mp.png\",\n        \"discount\": 0,\n        \"stock\": 12,\n        \"additionalImages\": [],\n        \"specifications\": {\n            \"processor\": \"Apple M2 Pro\",\n            \"memory\": \"12GB\",\n            \"storage\": \"512GB SSD\",\n            \"display\": \"14-inch Liquid Retina XDR\",\n            \"battery\": \"Up to 18 hours\"\n        },\n        \"isAvailable\": true,\n        \"rating\": 0,\n        \"reviewsCount\": 0,\n        \"reviews\": [],\n        \"tags\": [\n            \"MatePad\",\n            \"HUAWEI\",\n            \"professional\"\n        ],\n        \"createdAt\": \"2025-05-15T07:41:11.290Z\",\n        \"updatedAt\": \"2025-05-15T07:41:57.787Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": 3,\n    \"commnet\": \"very bad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"68258d0a5a381a8ee891326e",
+								"reviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add review",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rating\": 3,\n    \"commnet\": \"very bad\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"68258d0a5a381a8ee891326e",
+										"reviews"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "750"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ee-ur1ITBItQEhXPXhEO3nxYQHl9A0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:51:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"68258d0a5a381a8ee891326e\",\n        \"name\": \"Logitech MX Keys\",\n        \"description\": \"Advanced Wireless Illuminated Keyboard\",\n        \"price\": 119.99,\n        \"category\": \"Accessories\",\n        \"brand\": \"Logitech\",\n        \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n        \"stock\": 90,\n        \"specifications\": {\n            \"type\": \"Full-size\",\n            \"connectivity\": \"Bluetooth, USB\",\n            \"battery\": \"10 days with backlight\",\n            \"features\": \"Smart illumination, Flow technology\"\n        },\n        \"tags\": [\n            \"keyboard\",\n            \"wireless\",\n            \"professional\"\n        ],\n        \"__v\": 3,\n        \"additionalImages\": [],\n        \"discount\": 0,\n        \"isAvailable\": true,\n        \"rating\": 3,\n        \"reviews\": [\n            {\n                \"userId\": \"6825ae2631ea61345b56f1c0\",\n                \"rating\": 3,\n                \"date\": \"2025-05-15T09:51:47.589Z\",\n                \"_id\": \"6825b9336b0c536b01cb2c0c\"\n            }\n        ],\n        \"reviewsCount\": 1,\n        \"updatedAt\": \"2025-05-15T09:51:47.615Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get product reviews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"user143532\",\n    \"rating\": 3,\n    \"commnet\": \"very bad\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"68258d0a5a381a8ee891326e",
+								"reviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add review Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\": \"user143532\",\n    \"rating\": 3,\n    \"commnet\": \"very bad\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"68258d0a5a381a8ee891326e",
+										"reviews"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-UiN+3FuEueey8wt97H18qRJQMyo\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:53:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"userId\": {\n                \"_id\": \"6825ae2631ea61345b56f1c0\",\n                \"name\": \"mahmoud\",\n                \"email\": \"hodanabil@gmail.com\"\n            },\n            \"rating\": 3,\n            \"date\": \"2025-05-15T09:51:47.589Z\",\n            \"_id\": \"6825b9336b0c536b01cb2c0c\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update stock",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quantity\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e/stock",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"68258d0a5a381a8ee891326e",
+								"stock"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add review Copy",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quantity\": 10\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/68258d0a5a381a8ee891326e/stock",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"68258d0a5a381a8ee891326e",
+										"stock"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "714"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ca-26X8kW0Dw12SXbWdYSLUwSrrk/A\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:55:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"68258d0a5a381a8ee891326e\",\n        \"name\": \"Logitech MX Keys\",\n        \"description\": \"Advanced Wireless Illuminated Keyboard\",\n        \"price\": 119.99,\n        \"category\": \"Accessories\",\n        \"brand\": \"Logitech\",\n        \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n        \"stock\": 90,\n        \"specifications\": {\n            \"type\": \"Full-size\",\n            \"connectivity\": \"Bluetooth, USB\",\n            \"battery\": \"10 days with backlight\",\n            \"features\": \"Smart illumination, Flow technology\"\n        },\n        \"tags\": [\n            \"keyboard\",\n            \"wireless\",\n            \"professional\"\n        ],\n        \"__v\": 1,\n        \"additionalImages\": [],\n        \"discount\": 0,\n        \"isAvailable\": true,\n        \"rating\": 4,\n        \"reviews\": [\n            {\n                \"userId\": \"mockId\",\n                \"rating\": 4,\n                \"comment\": null,\n                \"date\": \"2025-05-15T07:51:50.787Z\"\n            }\n        ],\n        \"reviewsCount\": 1,\n        \"updatedAt\": \"2025-05-15T07:55:30.811Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/products/68259e31341a409cc55cff7c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"68259e31341a409cc55cff7c"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search Copy 2",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/products/68259e31341a409cc55cff7c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"68259e31341a409cc55cff7c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-EBmL1Xp/q97YRIbGlRzSUPSZ5ss\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 07:57:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": \"Product deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "add to favorites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"favorites"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add to favorites",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/users/favorites",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"favorites"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "320"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"140-QVIrdyFVIRpx9nrhX2GPjkAnwAY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:21:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"6825ae2631ea61345b56f1c0\",\n        \"name\": \"mahmoud\",\n        \"email\": \"hodanabil@gmail.com\",\n        \"password\": \"$2b$10$k57qH7hwvy4cvZhROMcumuHbpToW7xOXhLnPbjCLPNrYcJSXfONcK\",\n        \"favorites\": [\n            \"68258d0a5a381a8ee891326e\"\n        ],\n        \"cart\": [],\n        \"createdAt\": \"2025-05-15T09:04:38.461Z\",\n        \"updatedAt\": \"2025-05-15T09:21:29.419Z\",\n        \"__v\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add to cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add to cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/users/cart",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"cart"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "404"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"194-G4WQtTpe3YQxGhZd6eKvIGxzmA8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:34:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"6825ae2631ea61345b56f1c0\",\n        \"name\": \"mahmoud\",\n        \"email\": \"hodanabil@gmail.com\",\n        \"password\": \"$2b$10$k57qH7hwvy4cvZhROMcumuHbpToW7xOXhLnPbjCLPNrYcJSXfONcK\",\n        \"favorites\": [\n            \"68258d0a5a381a8ee891326e\"\n        ],\n        \"cart\": [\n            {\n                \"product\": \"68258d0a5a381a8ee891326e\",\n                \"quantity\": 1,\n                \"_id\": \"6825b513ecd73e891fe2d7b6\"\n            }\n        ],\n        \"createdAt\": \"2025-05-15T09:04:38.461Z\",\n        \"updatedAt\": \"2025-05-15T09:34:11.648Z\",\n        \"__v\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "remove from cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "remove from cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/users/cart/remove",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"cart",
+										"remove"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "320"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"140-aTiCNJe6OaTfwpKi5BbX1KAhqI0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 16:16:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"6825ae2631ea61345b56f1c0\",\n        \"name\": \"mahmoud\",\n        \"email\": \"hodanabil@gmail.com\",\n        \"password\": \"$2b$10$k57qH7hwvy4cvZhROMcumuHbpToW7xOXhLnPbjCLPNrYcJSXfONcK\",\n        \"favorites\": [\n            \"68258d0a5a381a8ee891326e\"\n        ],\n        \"cart\": [],\n        \"createdAt\": \"2025-05-15T09:04:38.461Z\",\n        \"updatedAt\": \"2025-05-15T16:16:01.779Z\",\n        \"__v\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "remove from favorites",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/favorites/remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"favorites",
+								"remove"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "remove from favorites",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"productId\": \"68258d0a5a381a8ee891326e\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/users/favorites/remove",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"favorites",
+										"remove"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "294"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"126-6/J5ikFqUrCHbzjz+e4uSldSNog\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 16:16:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"_id\": \"6825ae2631ea61345b56f1c0\",\n        \"name\": \"mahmoud\",\n        \"email\": \"hodanabil@gmail.com\",\n        \"password\": \"$2b$10$k57qH7hwvy4cvZhROMcumuHbpToW7xOXhLnPbjCLPNrYcJSXfONcK\",\n        \"favorites\": [],\n        \"cart\": [],\n        \"createdAt\": \"2025-05-15T09:04:38.461Z\",\n        \"updatedAt\": \"2025-05-15T16:16:45.869Z\",\n        \"__v\": 4\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get my favorites",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"mahmoud\",\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"favorites"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get my favorites",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"mahmoud\",\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/users/favorites",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"favorites"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "802"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"322-fn/I8kUchdBNYVtimXy4e2YhM/o\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:32:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"68258d0a5a381a8ee891326e\",\n            \"name\": \"Logitech MX Keys\",\n            \"description\": \"Advanced Wireless Illuminated Keyboard\",\n            \"price\": 119.99,\n            \"category\": \"Accessories\",\n            \"brand\": \"Logitech\",\n            \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n            \"stock\": 90,\n            \"specifications\": {\n                \"type\": \"Full-size\",\n                \"connectivity\": \"Bluetooth, USB\",\n                \"battery\": \"10 days with backlight\",\n                \"features\": \"Smart illumination, Flow technology\"\n            },\n            \"tags\": [\n                \"keyboard\",\n                \"wireless\",\n                \"professional\"\n            ],\n            \"__v\": 2,\n            \"additionalImages\": [],\n            \"discount\": 0,\n            \"isAvailable\": true,\n            \"rating\": 3.5,\n            \"reviews\": [\n                {\n                    \"userId\": \"mockId\",\n                    \"rating\": 4,\n                    \"comment\": null,\n                    \"date\": \"2025-05-15T07:51:50.787Z\"\n                },\n                {\n                    \"userId\": \"user143532\",\n                    \"rating\": 3,\n                    \"comment\": null,\n                    \"date\": \"2025-05-15T07:56:08.489Z\"\n                }\n            ],\n            \"reviewsCount\": 2,\n            \"updatedAt\": \"2025-05-15T07:56:08.491Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get my cart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"mahmoud\",\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/users/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"cart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get my cart",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"mahmoud\",\n    \"email\": \"hodanabil@gmail.com\",\n    \"password\": \"00000000\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/users/cart",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"cart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "860"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35c-Wvgo/5e9t1iqI4VI+UeXkeUGLqk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 15 May 2025 09:35:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"product\": {\n                \"_id\": \"68258d0a5a381a8ee891326e\",\n                \"name\": \"Logitech MX Keys\",\n                \"description\": \"Advanced Wireless Illuminated Keyboard\",\n                \"price\": 119.99,\n                \"category\": \"Accessories\",\n                \"brand\": \"Logitech\",\n                \"imageUrl\": \"https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800\",\n                \"stock\": 90,\n                \"specifications\": {\n                    \"type\": \"Full-size\",\n                    \"connectivity\": \"Bluetooth, USB\",\n                    \"battery\": \"10 days with backlight\",\n                    \"features\": \"Smart illumination, Flow technology\"\n                },\n                \"tags\": [\n                    \"keyboard\",\n                    \"wireless\",\n                    \"professional\"\n                ],\n                \"__v\": 2,\n                \"additionalImages\": [],\n                \"discount\": 0,\n                \"isAvailable\": true,\n                \"rating\": 3.5,\n                \"reviews\": [\n                    {\n                        \"userId\": \"mockId\",\n                        \"rating\": 4,\n                        \"comment\": null,\n                        \"date\": \"2025-05-15T07:51:50.787Z\"\n                    },\n                    {\n                        \"userId\": \"user143532\",\n                        \"rating\": 3,\n                        \"comment\": null,\n                        \"date\": \"2025-05-15T07:56:08.489Z\"\n                    }\n                ],\n                \"reviewsCount\": 2,\n                \"updatedAt\": \"2025-05-15T07:56:08.491Z\"\n            },\n            \"quantity\": 1,\n            \"_id\": \"6825b513ecd73e891fe2d7b6\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "BearerToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODI1YWUyNjMxZWE2MTM0NWI1NmYxYzAiLCJpYXQiOjE3NDczMDA4MjgsImV4cCI6MTc0NzkwNTYyOH0.Scq0tYqcRYS4Hj86hRBdNBvPhUfP8LlBBnMajE48ekY",
+			"type": "default"
+		}
+	]
+}

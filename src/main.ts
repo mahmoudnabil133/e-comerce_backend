@@ -10,6 +10,7 @@ import { BadRequestException, ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   SwaggerConfig.setup(app);
   app.useGlobalPipes(
     new ValidationPipe({
